@@ -21,7 +21,7 @@ output_dir = "experiments/cme_finetune_aug"
 from datasets.coco import CocoDetection
 from transforms import presets   # ← 기존 presets 모듈
 
-coco_path = "datasets/MK_data_v2/CME_split"
+coco_path = "MK_data_v2/CME_split"
 
 train_dataset = CocoDetection(
     img_folder=f"{coco_path}/train",
