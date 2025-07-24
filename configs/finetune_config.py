@@ -1,7 +1,7 @@
 # --------------------------------------------------
 # ❶ 공통 하이퍼 파라미터
 # --------------------------------------------------
-num_epochs       = 30        # fine‑tune이므로 짧게
+num_epochs       = 50        # fine‑tune이므로 짧게
 batch_size       = 4
 num_workers      = 4
 pin_memory       = True
@@ -13,7 +13,7 @@ max_norm         = 0.1
 # ❷ 출력 디렉터리
 #   (기존과 다른 폴더명이어야 기존 체크포인트와 충돌 X)
 # --------------------------------------------------
-output_dir = "experiments/cme_finetune_aug_mosaic"
+output_dir = "experiments/cme_finetune_aug"
 
 # --------------------------------------------------
 # ❸ 데이터셋 (새 train/val 경로 사용)
