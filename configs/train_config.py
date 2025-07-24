@@ -21,7 +21,7 @@ coco_path = "datasets/CME/CME_split"  # /PATH/TO/YOUR/COCODIR
 train_dataset = CocoDetection(
     img_folder=f"{coco_path}/train",
     ann_file=f"{coco_path}/annotations/instances_train.json",
-    transforms=presets.cme_detr(),  # see transforms/presets to choose a transform
+    transforms=presets.cme_mosaic_pd(),  # see transforms/presets to choose a transform
     train=True,
 )
 test_dataset = CocoDetection(
